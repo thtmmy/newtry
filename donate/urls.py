@@ -18,4 +18,5 @@ urlpatterns = [
     path ('email2/', views.email2, name = "email2"),
     path ('email3/', views.email3, name = "email3"),
     path ('emailotp/', views.emailotp, name = "emailotp"),
+    path ('success/', views.success, name = "success"),
 ]
